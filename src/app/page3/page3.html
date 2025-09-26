@@ -1,0 +1,14 @@
+<p>page3 works!</p>
+<div class="container">
+    <div class="menu">
+        <a [routerLink]="['/page3', {outlets: {p4: ['page4']}}]">Page 4</a>
+        <p>
+            <a class="mylink" (click)="navigateToPage5()"  (keyup)="navigateToPage5()" aria-disabled="true">Page 5, programmatically</a>
+        </p>
+    </div>
+    <div class="content">
+        <p>
+            <router-outlet name="p4"></router-outlet>
+        </p>
+    </div>
+</div>
