@@ -12,5 +12,5 @@ Page 1 thru Page 4 links are routed using routerLink.
 
 Page 5 link is routed programmatically.
 
-Routing to corresponding layouts is accomplished using the Angular's router-outlet and named router-outlet features.
+
 

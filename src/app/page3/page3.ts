@@ -14,6 +14,6 @@ export class Page3 {
   }
 
   navigateToPage5() {
-    this.router.navigate(['/page3', { outlets: { p4: 'page5' } }]);
+    this.router.navigate(['/page3/page5']);
   }
 }

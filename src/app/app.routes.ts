@@ -14,8 +14,8 @@ export const routes: Routes = [
      },
     { path: 'page3', component: Page3,   
       children: [
-         { path: 'page4', component: Page4, outlet: 'p4' },
-         { path: 'page5', component: Page5, outlet: 'p4' }
+         { path: 'page4', component: Page4 },
+         { path: 'page5', component: Page5 }
       ]
     },
 ];
