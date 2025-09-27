@@ -12,5 +12,6 @@ Page 1 thru Page 4 links are routed using routerLink.
 
 Page 5 link is routed programmatically.
 
+The Left Menu panel view can be toggled on or off.
 
 

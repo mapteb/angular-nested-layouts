@@ -12,4 +12,9 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class App {
   protected title = 'ng-v20-features';
+  isMenuVisible = true;
+
+  toggleLeftMenu() {
+    this.isMenuVisible = !this.isMenuVisible;
+  }
 }
