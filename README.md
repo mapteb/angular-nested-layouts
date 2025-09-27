@@ -1,6 +1,6 @@
 # Angular Nested Layouts
 
-This project is a helloworld style implementation of an Angular v20 app that uses nested layouts like in this [demo](https://mapteb.github.io/angular-nested-layouts/).
+This project is a helloworld style implementation of an Angular v20 app that uses dynamic nested layouts like in this [demo](https://mapteb.github.io/angular-nested-layouts/).
 
 ## Features 
 
