@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-v20-features": {
+    "angular-nested-layouts": {
       "projectType": "application",
       "schematics": {
 	    "@schematics/angular:component": {
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-v20-features:build:production"
+              "buildTarget": "angular-nested-layouts:build:production"
             },
             "development": {
-              "buildTarget": "ng-v20-features:build:development"
+              "buildTarget": "angular-nested-layouts:build:development"
             }
           },
           "defaultConfiguration": "development"

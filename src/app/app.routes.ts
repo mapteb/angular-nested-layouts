@@ -5,6 +5,7 @@ import { Page3 } from './page3/page3';
 import { Page4 } from './page4/page4';
 import { authGuard } from './guards/auth-guard';
 import { Page5 } from './page5/page5';
+import { Tab1 } from './tab1/tab1';
 
 
 export const routes: Routes = [
@@ -18,4 +19,5 @@ export const routes: Routes = [
          { path: 'page5', component: Page5 }
       ]
     },
+    { path: 'tab1', component: Tab1 },
 ];

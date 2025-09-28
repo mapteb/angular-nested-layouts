@@ -1,8 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-// import { Comp } from './feat/comp/comp';
-// import { Layout } from './layout/layout';
-// import { Home } from './home/home';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +8,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'ng-v20-features';
-  isMenuVisible = true;
+  protected title = 'angular-nested-layouts';
+  isMenuVisible = signal(true);;
+  isExpanded = signal(true);
 
   toggleLeftMenu() {
-    this.isMenuVisible = !this.isMenuVisible;
+    this.isMenuVisible.update((value) => !value);    
   }
 }

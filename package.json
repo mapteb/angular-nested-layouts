@@ -1,5 +1,5 @@
 {
-  "name": "ng-v20-features",
+  "name": "angular-nested-layouts",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -14,6 +14,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.3.2",
     "@angular/cdk": "^20.2.4",
     "@angular/common": "^20.0.0",
     "@angular/compiler": "^20.0.0",

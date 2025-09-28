@@ -3,13 +3,15 @@
 <div class="container">
   <div class="headerrow">
     <a class="ghsrc" href="https://github.com/mapteb/angular-nested-layouts">Source</a>
-    
+
     <br><br>
-    <div class="tgl" (click)="toggleLeftMenu()">Toggle Left Menu</div>
+    <div><span class="tgl" (click)="toggleLeftMenu()">Toggle Left Menu
+      </span> | <span><a routerLink="/tab1">Tab 1</a></span>
+    </div>
   </div>
   <div class="bodyrowcnr">
-    @if (isMenuVisible) {
-    <div class="menucolcnr">
+    @if (isMenuVisible()) {
+    <div class="menucolcnr enter-container" animate.enter="slide-in" animate.leave="slide-out">
       <div><a routerLink="/page1">Page 1</a><br></div>
       <div><a routerLink="/page2">Page 2</a><br></div>
     </div>
