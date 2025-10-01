@@ -5,19 +5,27 @@ import { Page3 } from './page3/page3';
 import { Page4 } from './page4/page4';
 import { authGuard } from './guards/auth-guard';
 import { Page5 } from './page5/page5';
-import { Tab1 } from './tab1/tab1';
+import { Home } from './home/home';
+import { Signout } from './signout/signout';
 
 
 export const routes: Routes = [
-    { path: 'page1', component: Page1 },
-    { path: 'page2', component: Page2,
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: Home,
+    children: [
+      { path: 'page1', component: Page1 },
+      {
+        path: 'page2', component: Page2,
         canActivate: [authGuard],
-     },
-    { path: 'page3', component: Page3,   
-      children: [
-         { path: 'page4', component: Page4 },
-         { path: 'page5', component: Page5 }
-      ]
-    },
-    { path: 'tab1', component: Tab1 },
+      },
+      {
+        path: 'page3', component: Page3,
+        children: [
+          { path: 'page4', component: Page4 },
+          { path: 'page5', component: Page5 }
+        ]
+      },
+    ]
+  },
+  { path: 'signout', component: Signout }
 ];
