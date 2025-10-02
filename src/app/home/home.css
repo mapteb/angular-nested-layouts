@@ -1,42 +1,54 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  background-color: #2196F3;
-  padding: 5px;
+  /* gap: 2px; */
+  background-color: white;
+  /* padding: 5px; */
   height: 100%;
-  font-weight: 460;
+  font-weight: 500;
   font-size: 1rem;
 }
 
-.headerrow {
-  background-color:#7ec088;
+.headerrow {  
+  display: flex;
+  flex-direction: column;
+  background-color: #007bff;
   width: 100%;
   height: 10%;
+  padding: 8px;
+}
+
+.hdritm {
+  margin: 5px;
 }
 
 .bodyrowcnr {
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  /* gap: 4px; */
   background-color: #a2b6c7;
-  padding: 5px;
-  height:90%;
+  /* padding: 5px; */
+  height:100%;
 }
 
 .menucolcnr {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  /* gap: 2px; */
   background-color: #8eaecc;
-  padding: 5px;
+  padding: 10px;
   width: 16%;
+}
+
+.menulbl {
+  padding: 3px;
 }
 
 .content {
   background-color: #a2b6c7;
   width: 100%;
-  gap: 2px;
+  /* gap: 2px; */
+  padding: 10px;
 }
 
 .hdrlbl {
@@ -46,6 +58,8 @@
 
 .ghsrc {
   float: left;
+  margin: 5px;
+  cursor: pointer;
 }
 
 .tgl {
@@ -53,7 +67,7 @@
 }
 
 .signout {
-  float: right;
+  float: left;
   cursor: pointer;
   margin-right: 20px;
 }
